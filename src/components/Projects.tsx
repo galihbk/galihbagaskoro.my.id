@@ -207,6 +207,39 @@ export default function Projects() {
                 View Project
               </a>
             </div>
+            <div className="bg-[#11161d] rounded-xl p-6 hover:translate-y-[-4px] transition">
+              <h4 className="text-lg font-semibold mb-3">PAMKITA</h4>
+              <p className="text-sm text-neutral-400 mb-4">
+                SaaS platform for water billing (PDAM-style) management,
+                featuring customer registration, tariff configuration, meter
+                recording, automatic billing generation, payment integration via
+                Xendit, and real-time dashboard analytics.
+              </p>
+              <div className="flex gap-2 mb-4 flex-wrap">
+                {[
+                  "CodeIgniter 4",
+                  "Node.js API",
+                  "Xendit",
+                  "PostgreSQL",
+                  "Dashboard",
+                ].map((t) => (
+                  <span
+                    key={t}
+                    className="text-xs px-3 py-1 rounded-full bg-black/40 text-neutral-300"
+                  >
+                    {t}
+                  </span>
+                ))}
+              </div>
+              <a
+                href="https://pamkita.id"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-6 py-2.5 bg-[var(--accent)] text-black rounded-md text-sm font-medium hover:opacity-90 transition"
+              >
+                View Project
+              </a>
+            </div>
           </div>
         </div>
       </div>
