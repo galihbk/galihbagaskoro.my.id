@@ -10,5 +10,153 @@
       "projects": "Proyek Digital",
       "students": "Mahasiswa Terlibat"
     }
+  },
+  "navbar": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "portfolio": "Portofolio",
+    "contact": "Kontak"
+  },
+  "about": {
+    "title": "Tentang Saya",
+    "p1": "Saya adalah Dosen dan Full-Stack Developer dengan pengalaman membangun sistem digital dan aplikasi web interaktif.",
+    "p2": "Fokus saya pada pengembangan platform yang scalable, sistem real-time, dan solusi pembelajaran berbasis teknologi.",
+    "p3": "Saya percaya teknologi bukan hanya untuk menyelesaikan masalah, tetapi juga untuk meningkatkan cara manusia belajar dan berinteraksi.",
+    "p4": "Saat ini saya menggabungkan aktivitas akademik dengan pengembangan sistem secara praktis, menjembatani pendidikan dan teknologi."
+  },
+  "skills": {
+    "title": "Keahlian Utama"
+  },
+  "experience": {
+    "title": "Pengalaman & Pendidikan",
+    "education": "Pendidikan",
+    "work": "Pengalaman Profesional",
+    "degrees": [
+      {
+        "title": "Magister Ilmu Komputer",
+        "institution": "Universitas AMIKOM Purwokerto",
+        "duration": "2023 – 2025"
+      },
+      {
+        "title": "Sarjana Informatika",
+        "institution": "Universitas AMIKOM Purwokerto",
+        "duration": "2017 – 2022"
+      }
+    ],
+    "roles": [
+      {
+        "title": "Founder & Lead Developer – BIBSPORT",
+        "duration": "2022 – Sekarang",
+        "points": [
+          "Merancang dan mengembangkan platform event olahraga skala penuh.",
+          "Mengimplementasikan pelacakan GPS real-time dan sistem pembayaran otomatis.",
+          "Mendesain arsitektur sistem yang scalable dan siap produksi."
+        ]
+      },
+      {
+        "title": "Dosen",
+        "duration": "2026 – Sekarang",
+        "points": [
+          "Mengajar Media Pembelajaran dengan fokus sistem digital dan interaktif.",
+          "Mengintegrasikan pendekatan teknologi dalam proses pembelajaran."
+        ]
+      },
+      {
+        "title": "Freelance Full-Stack Developer",
+        "duration": "Juli 2021 – Sekarang",
+        "points": [
+          "Membangun aplikasi web end-to-end menggunakan Laravel dan Node.js.",
+          "Mengembangkan sistem real-time dan integrasi pembayaran.",
+          "Melakukan deployment menggunakan Docker dan Nginx."
+        ]
+      },
+      {
+        "title": "Web Developer – Universitas AMIKOM Purwokerto",
+        "duration": "Juli 2022 – Desember 2025",
+        "points": [
+          "Mengembangkan sistem web institusi.",
+          "Meningkatkan performa dan keamanan sistem."
+        ]
+      },
+      {
+        "title": "Founder – Gin Invitation",
+        "duration": "Desember 2021 – Desember 2023",
+        "points": [
+          "Membangun dan mengembangkan platform undangan digital.",
+          "Melakukan optimasi SEO dan peningkatan performa."
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Portofolio",
+    "featured": "Proyek Unggulan",
+    "others": "Proyek Lainnya",
+    "view": "Lihat Proyek",
+    "internal": "Sistem Internal",
+    "items": [
+      {
+        "title": "BIBSPORT",
+        "description": "Platform event olahraga dengan sistem ticketing real-time, pembayaran otomatis, invoice, notifikasi WhatsApp/email, dan pelacakan GPS live dengan fitur replay.",
+        "tech": ["Next.js", "Node.js", "Socket.IO", "Mapbox", "PostgreSQL"],
+        "link": "https://bibsport.id",
+        "featured": true
+      },
+      {
+        "title": "Monev Garuda Unsoed",
+        "description": "Sistem Monitoring dan Evaluasi untuk pelacakan KPI dan anggaran dengan struktur data hierarkis dan import Excel.",
+        "tech": ["Laravel", "PostgreSQL", "Dashboard"],
+        "internal": true
+      },
+      {
+        "title": "Desktop Information System – KORSIS SPN Purwokerto",
+        "description": "Sistem informasi berbasis desktop untuk mendukung pengelolaan data dan pelaporan internal.",
+        "tech": ["Desktop App", "Information System", "Internal Use"],
+        "internal": true
+      },
+      {
+        "title": "Monev PPI – BKPM",
+        "description": "Sistem Monitoring dan Evaluasi untuk investasi publik-swasta (PPI) mendukung pelaporan dan monitoring pemerintah.",
+        "tech": ["Monitoring System", "Government", "Dashboard"],
+        "internal": true
+      },
+      {
+        "title": "SIMTARU Bengkalis",
+        "description": "Pengembangan backend sistem tata ruang berbasis geospasial untuk pengelolaan data wilayah.",
+        "tech": ["Backend", "Geospatial", "PostgreSQL"],
+        "link": "https://simtaru.bengkaliskab.go.id/"
+      },
+      {
+        "title": "SMP Pancasila Jatilawang",
+        "description": "Landing page sekolah untuk menampilkan informasi institusi dan program akademik dengan desain responsif.",
+        "tech": [
+          "Landing Page",
+          "CodeIgniter 4",
+          "Bootstrap",
+          "HTML",
+          "Responsive"
+        ],
+        "link": "https://smppancasilajatilawang.sch.id"
+      },
+      {
+        "title": "PAMKITA",
+        "description": "Platform SaaS manajemen penagihan air dengan fitur registrasi pelanggan, pencatatan meter, otomatisasi billing, dan integrasi pembayaran Xendit.",
+        "tech": [
+          "CodeIgniter 4",
+          "Node.js API",
+          "Xendit",
+          "PostgreSQL",
+          "Dashboard"
+        ],
+        "link": "https://pamkita.id"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Hubungi Saya",
+    "name": "Nama",
+    "email": "Email",
+    "message": "Pesan",
+    "send": "Kirim Pesan"
   }
 }

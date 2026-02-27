@@ -10,5 +10,153 @@
       "projects": "Digital Projects",
       "students": "Students Impacted"
     }
+  },
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "About Me",
+    "p1": "I am a Lecturer and Full-Stack Developer with experience building digital systems and interactive web applications.",
+    "p2": "My work focuses on developing scalable platforms, real-time systems, and technology-driven learning solutions.",
+    "p3": "I believe technology should not only solve problems but also enhance how people learn and interact.",
+    "p4": "Currently, I combine academic teaching with practical system development, bridging education and technology."
+  },
+  "skills": {
+    "title": "Core Expertise"
+  },
+  "experience": {
+    "title": "Experience & Education",
+    "education": "Education",
+    "work": "Professional Experience",
+    "degrees": [
+      {
+        "title": "Master of Computer Science",
+        "institution": "Universitas AMIKOM Purwokerto",
+        "duration": "2023 – 2025"
+      },
+      {
+        "title": "Bachelor of Informatics",
+        "institution": "Universitas AMIKOM Purwokerto",
+        "duration": "2017 – 2022"
+      }
+    ],
+    "roles": [
+      {
+        "title": "Founder & Lead Developer – BIBSPORT",
+        "duration": "2022 – Present",
+        "points": [
+          "Architected and developed a full-scale sports event platform.",
+          "Implemented real-time GPS tracking, automated payments, and ticketing systems.",
+          "Designed scalable infrastructure and deployment pipelines."
+        ]
+      },
+      {
+        "title": "Lecturer",
+        "duration": "2026 – Present",
+        "points": [
+          "Teaching Media Pembelajaran with focus on digital and interactive systems.",
+          "Integrating technology-driven approaches into classroom learning."
+        ]
+      },
+      {
+        "title": "Freelance Full-Stack Developer",
+        "duration": "July 2021 – Present",
+        "points": [
+          "Architecting scalable web applications using Laravel and Node.js.",
+          "Building real-time systems and payment integrations.",
+          "Deploying production-ready applications using Docker and Nginx."
+        ]
+      },
+      {
+        "title": "Web Developer – Universitas AMIKOM Purwokerto",
+        "duration": "July 2022 – December 2025",
+        "points": [
+          "Developing institutional web systems.",
+          "Improving performance, security, and reliability."
+        ]
+      },
+      {
+        "title": "Founder – Gin Invitation",
+        "duration": "December 2021 – December 2023",
+        "points": [
+          "Built and scaled a digital invitation platform.",
+          "Focused on SEO optimization and performance improvement."
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Portfolio",
+    "featured": "Featured Project",
+    "others": "Other Projects",
+    "view": "View Project",
+    "internal": "Internal System",
+    "items": [
+      {
+        "title": "BIBSPORT",
+        "description": "A sports event platform featuring real-time ticketing, automated payments, invoice generation, WhatsApp/email notifications, and live GPS tracking with replay functionality.",
+        "tech": ["Next.js", "Node.js", "Socket.IO", "Mapbox", "PostgreSQL"],
+        "link": "https://bibsport.id",
+        "featured": true
+      },
+      {
+        "title": "Monev Garuda Unsoed",
+        "description": "Monitoring and Evaluation system for KPI and budget tracking with hierarchical data and Excel import functionality.",
+        "tech": ["Laravel", "PostgreSQL", "Dashboard"],
+        "internal": true
+      },
+      {
+        "title": "Desktop Information System – KORSIS SPN Purwokerto",
+        "description": "Desktop-based information system supporting internal data management, administration, and reporting processes.",
+        "tech": ["Desktop App", "Information System", "Internal Use"],
+        "internal": true
+      },
+      {
+        "title": "Monev PPI – BKPM",
+        "description": "Monitoring and Evaluation system for Public–Private Investment (PPI), supporting government performance tracking and reporting.",
+        "tech": ["Monitoring System", "Government", "Dashboard"],
+        "internal": true
+      },
+      {
+        "title": "SIMTARU Bengkalis",
+        "description": "Backend development for geospatial spatial planning system handling spatial data and regional management.",
+        "tech": ["Backend", "Geospatial", "PostgreSQL"],
+        "link": "https://simtaru.bengkaliskab.go.id/"
+      },
+      {
+        "title": "SMP Pancasila Jatilawang",
+        "description": "School landing page presenting institutional information and academic programs with responsive design.",
+        "tech": [
+          "Landing Page",
+          "CodeIgniter 4",
+          "Bootstrap",
+          "HTML",
+          "Responsive"
+        ],
+        "link": "https://smppancasilajatilawang.sch.id"
+      },
+      {
+        "title": "PAMKITA",
+        "description": "SaaS platform for water billing management with customer registration, meter recording, billing automation, and payment integration via Xendit.",
+        "tech": [
+          "CodeIgniter 4",
+          "Node.js API",
+          "Xendit",
+          "PostgreSQL",
+          "Dashboard"
+        ],
+        "link": "https://pamkita.id"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact Me",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message"
   }
 }
