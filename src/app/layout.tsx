@@ -2,30 +2,41 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { LanguageProvider } from "@/context/LanguageContext";
 
 export const metadata: Metadata = {
-  title: "Galih Bagaskoro | Full-Stack Web Developer",
+  title: "Galih Bagaskoro | Lecturer & Full-Stack Developer",
   description:
-    "Personal portfolio of Galih Bagaskoro, a Full-Stack Web Developer specializing in Laravel, Node.js, Next.js, real-time systems, and scalable web applications.",
+    "Official portfolio of Galih Bagaskoro, Lecturer and Full-Stack Developer specializing in digital learning systems, Laravel, Node.js, Next.js, and real-time web applications.",
   keywords: [
     "Galih Bagaskoro",
-    "Full-Stack Web Developer",
+    "Dosen Teknologi",
+    "Lecturer",
+    "Full-Stack Developer",
+    "Digital Learning",
     "Laravel Developer",
     "Node.js Developer",
     "Next.js Developer",
     "Web Developer Indonesia",
-    "Real-time Web Application",
+    "Educational Technology",
   ],
   authors: [{ name: "Galih Bagaskoro" }],
   creator: "Galih Bagaskoro",
+  metadataBase: new URL("https://galihbagaskoro.my.id"),
   openGraph: {
-    title: "Galih Bagaskoro | Full-Stack Web Developer",
+    title: "Galih Bagaskoro | Lecturer & Full-Stack Developer",
     description:
-      "Building scalable and real-time web applications using Laravel, Node.js, and Next.js.",
+      "Building digital systems and interactive learning experiences for modern education.",
     url: "https://galihbagaskoro.my.id",
     siteName: "Galih Bagaskoro Portfolio",
     locale: "en_US",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Galih Bagaskoro | Lecturer & Full-Stack Developer",
+    description:
+      "Digital learning enthusiast and full-stack developer building scalable web systems.",
   },
 };
 
@@ -36,10 +47,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="transition-colors duration-300">
-        <Navbar />
-        {children}
-        <Footer />
+      <body className="transition-colors duration-300 bg-[#0b0f14] text-white">
+        <LanguageProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );

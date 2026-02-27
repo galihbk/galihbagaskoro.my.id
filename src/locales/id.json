@@ -1,0 +1,14 @@
+{
+  "hero": {
+    "greeting": "Halo, saya",
+    "titleLine1": "Dosen &",
+    "titleLine2": "Full-Stack Developer",
+    "description": "Berfokus pada pengembangan sistem digital dan pengalaman belajar interaktif untuk pendidikan modern.",
+    "cta": "Lihat Karya Saya",
+    "stats": {
+      "experience": "Tahun Pengalaman",
+      "projects": "Proyek Digital",
+      "students": "Mahasiswa Terlibat"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "hero": {
+    "greeting": "Hi, I am",
+    "titleLine1": "Lecturer &",
+    "titleLine2": "Full-Stack Developer",
+    "description": "Passionate in building digital systems and interactive learning experiences for modern education.",
+    "cta": "Explore My Work",
+    "stats": {
+      "experience": "Years Experience",
+      "projects": "Digital Projects",
+      "students": "Students Impacted"
+    }
+  }
+}
