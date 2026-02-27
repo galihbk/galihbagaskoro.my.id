@@ -30,43 +30,97 @@ export default function Contact() {
           {t.contact.title}
         </h2>
 
-        <form
-          onSubmit={handleSubmit}
-          className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto"
-        >
-          <input
-            type="text"
-            placeholder={t.contact.name}
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            required
-            className="bg-[#11161d] p-4 rounded-md outline-none focus:ring-2 focus:ring-[var(--accent)] transition w-full"
-          />
+        <div className="grid md:grid-cols-2 gap-16 items-start">
+          {/* LEFT INFO */}
+          <div className="space-y-6">
+            <p className="text-neutral-400 leading-relaxed">
+              {t.contact.subtitle}
+            </p>
 
-          <input
-            type="email"
-            placeholder={t.contact.email}
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-            className="bg-[#11161d] p-4 rounded-md outline-none focus:ring-2 focus:ring-[var(--accent)] transition w-full"
-          />
+            <div className="space-y-3 text-sm">
+              <div>
+                <span className="text-neutral-500">
+                  {t.contact.info.emailLabel}:
+                </span>
+                <br />
+                <a
+                  href="mailto:galihbagaskoro@gmail.com"
+                  className="text-[var(--accent)] hover:underline"
+                >
+                  net.galih7@gmail.com
+                </a>
+              </div>
 
-          <textarea
-            placeholder={t.contact.message}
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            required
-            className="bg-[#11161d] p-4 rounded-md outline-none focus:ring-2 focus:ring-[var(--accent)] transition md:col-span-2 h-36 resize-none w-full"
-          />
+              <div>
+                <span className="text-neutral-500">
+                  {t.contact.info.whatsappLabel}:
+                </span>
+                <br />
+                <a
+                  href="https://wa.me/628xxxxxxxxxx"
+                  target="_blank"
+                  className="text-[var(--accent)] hover:underline"
+                >
+                  +62 81276438553
+                </a>
+              </div>
 
-          <button
-            type="submit"
-            className="md:col-span-2 w-full sm:w-auto mx-auto bg-[var(--accent)] text-black py-3 px-8 rounded-md font-medium hover:opacity-90 transition"
-          >
-            {t.contact.send}
-          </button>
-        </form>
+              <div>
+                <span className="text-neutral-500">
+                  {t.contact.info.linkedinLabel}:
+                </span>
+                <br />
+                <a
+                  href="https://linkedin.com/in/galihbagaskoro"
+                  target="_blank"
+                  className="text-[var(--accent)] hover:underline"
+                >
+                  {t.contact.info.linkedinText}
+                </a>
+              </div>
+            </div>
+
+            <div className="text-xs text-neutral-500 pt-4">
+              {t.contact.info.availability}
+            </div>
+          </div>
+
+          {/* RIGHT FORM */}
+          <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-6">
+            <input
+              type="text"
+              placeholder={t.contact.name}
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
+              className="bg-[#11161d] p-4 rounded-md outline-none focus:ring-2 focus:ring-[var(--accent)] transition w-full"
+            />
+
+            <input
+              type="email"
+              placeholder={t.contact.email}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+              className="bg-[#11161d] p-4 rounded-md outline-none focus:ring-2 focus:ring-[var(--accent)] transition w-full"
+            />
+
+            <textarea
+              placeholder={t.contact.message}
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              required
+              className="bg-[#11161d] p-4 rounded-md outline-none focus:ring-2 focus:ring-[var(--accent)] transition h-36 resize-none w-full"
+            />
+
+            <button
+              type="submit"
+              className="bg-[var(--accent)] text-black py-3 rounded-md font-medium hover:opacity-90 transition"
+            >
+              {t.contact.send}
+            </button>
+          </form>
+        </div>
       </div>
     </section>
   );

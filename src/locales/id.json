@@ -4,11 +4,11 @@
     "titleLine1": "Dosen &",
     "titleLine2": "Full-Stack Developer",
     "description": "Berfokus pada pengembangan sistem digital dan pengalaman belajar interaktif untuk pendidikan modern.",
-    "cta": "Lihat Karya Saya",
+    "cta": "Hubungi Saya",
     "stats": {
-      "experience": "Tahun Pengalaman",
-      "projects": "Proyek Digital",
-      "students": "Mahasiswa Terlibat"
+      "experience": "Tahun Membangun Sistem Digital",
+      "projects": "Sistem Telah Dideploy",
+      "students": "Mahasiswa Dibimbing"
     }
   },
   "navbar": {
@@ -154,6 +154,14 @@
   },
   "contact": {
     "title": "Hubungi Saya",
+    "subtitle": "Terbuka untuk kolaborasi, pengembangan sistem digital, diskusi akademik, dan proyek pendidikan inovatif.",
+    "info": {
+      "emailLabel": "Email",
+      "whatsappLabel": "WhatsApp",
+      "linkedinLabel": "LinkedIn",
+      "linkedinText": "Lihat Profil",
+      "availability": "Biasanya merespons dalam 24 jam."
+    },
     "name": "Nama",
     "email": "Email",
     "message": "Pesan",

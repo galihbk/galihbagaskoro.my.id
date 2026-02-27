@@ -7,7 +7,9 @@
   --muted: #9ca3af;
   --accent: #38bdf8; /* sky-400 */
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .light {
   --bg: #ffffff;
   --card: #f3f4f6;

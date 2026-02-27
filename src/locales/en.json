@@ -4,11 +4,11 @@
     "titleLine1": "Lecturer &",
     "titleLine2": "Full-Stack Developer",
     "description": "Passionate in building digital systems and interactive learning experiences for modern education.",
-    "cta": "Explore My Work",
+    "cta": "Contact Me",
     "stats": {
-      "experience": "Years Experience",
-      "projects": "Digital Projects",
-      "students": "Students Impacted"
+      "experience": "Years Building Digital Systems",
+      "projects": "Systems Deployed",
+      "students": "Students Mentored"
     }
   },
   "navbar": {
@@ -154,6 +154,14 @@
   },
   "contact": {
     "title": "Contact Me",
+    "subtitle": "I'm open to collaboration, digital system development, academic discussion, and innovative education projects.",
+    "info": {
+      "emailLabel": "Email",
+      "whatsappLabel": "WhatsApp",
+      "linkedinLabel": "LinkedIn",
+      "linkedinText": "View Profile",
+      "availability": "Usually responds within 24 hours."
+    },
     "name": "Name",
     "email": "Email",
     "message": "Message",

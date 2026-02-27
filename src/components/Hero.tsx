@@ -17,7 +17,10 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center pt-24 overflow-hidden">
+    <section
+      className="relative min-h-screen flex items-center pt-24 overflow-hidden"
+      id="home"
+    >
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-[#0b0f14]" />
         <div
@@ -30,13 +33,9 @@ export default function Hero() {
       <div className="max-w-[1200px] mx-auto px-6 grid grid-cols-1 md:grid-cols-[520px_1fr] gap-12 items-center">
         <div>
           {/* Greeting */}
-          <p className="text-sm text-neutral-400 mb-2">
-            {t.hero.greeting}
-          </p>
+          <p className="text-sm text-neutral-400 mb-2">{t.hero.greeting}</p>
 
-          <h2 className="text-lg text-neutral-300 mb-4">
-            {profile.name}
-          </h2>
+          <h2 className="text-lg text-neutral-300 mb-4">{profile.name}</h2>
 
           {/* Title */}
           <h1 className="text-[44px] leading-tight font-bold text-[var(--accent)]">
@@ -74,19 +73,24 @@ export default function Hero() {
             ))}
           </div>
 
-          {/* CTA */}
-          <div className="flex gap-4 mt-8">
-            <button className="px-6 py-2.5 bg-[var(--accent)] text-black rounded-md text-sm font-medium">
-              {t.hero.cta}
-            </button>
-          </div>
+          <button
+            onClick={() => {
+              const el = document.getElementById("contact");
+              if (!el) return;
 
-          {/* Stats */}
+              const y = el.getBoundingClientRect().top + window.scrollY - 80;
+              window.scrollTo({ top: y, behavior: "smooth" });
+            }}
+            className="px-6 py-2.5 mt-4 bg-[var(--accent)] text-black rounded-md text-sm font-medium hover:opacity-90 transition"
+          >
+            {t.hero.cta}
+          </button>
+
           <div className="grid grid-cols-3 gap-4 mt-10 max-w-md">
             {[
-              { value: "3+", label: t.hero.stats.experience },
-              { value: "50+", label: t.hero.stats.projects },
-              { value: "100+", label: t.hero.stats.students },
+              { value: "4+", label: t.hero.stats.experience },
+              { value: "30+", label: t.hero.stats.projects },
+              // { value: "80+", label: t.hero.stats.students },
             ].map((item) => (
               <div
                 key={item.label}
@@ -95,15 +99,12 @@ export default function Hero() {
                 <div className="text-[var(--accent)] font-bold text-lg">
                   {item.value}
                 </div>
-                <div className="text-xs text-neutral-400">
-                  {item.label}
-                </div>
+                <div className="text-xs text-neutral-400">{item.label}</div>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Image */}
         <div className="relative flex justify-center items-center">
           <div className="absolute w-[420px] h-[420px] rounded-full bg-[#0f141b]" />
 
