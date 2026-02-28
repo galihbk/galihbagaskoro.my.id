@@ -15,10 +15,10 @@ export const classes: Record<string, ClassType> = {
     title: "Media Pembelajaran",
     semester: "Semester Genap - 24PE",
     contract: `
-1. Kehadiran 20%
-2. Tugas 20%
-3. UTS 30%
-4. UAS 30%
+1. Kehadiran 25%
+2. Tugas 25%
+3. UTS 25%
+4. UAS 25%
     `,
     materials: [
       {
