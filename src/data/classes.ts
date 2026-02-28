@@ -11,9 +11,9 @@ export type ClassType = {
 };
 
 export const classes: Record<string, ClassType> = {
-  "media-2026-a": {
+  "media-24-pe-genap": {
     title: "Media Pembelajaran",
-    semester: "Semester Genap 2026 - A",
+    semester: "Semester Genap - 24PE",
     contract: `
 1. Kehadiran 20%
 2. Tugas 20%
