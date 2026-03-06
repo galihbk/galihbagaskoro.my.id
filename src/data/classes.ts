@@ -7,6 +7,7 @@ export type ClassType = {
     title: string;
     file: string;
     url: string;
+    showing: boolean;
   }[];
 };
 
@@ -26,6 +27,14 @@ export const classes: Record<string, ClassType> = {
         title: "Perkenalan dan Kontrak Kuliah",
         file: "",
         url: "",
+        showing: true,
+      },
+      {
+        week: 2,
+        title: "Pengantar Media Pembelajaran",
+        file: "/files/media-pembelajaran/2-pengantar-media-pembelajaran.pptx",
+        url: "",
+        showing: false,
       },
     ],
   },

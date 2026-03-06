@@ -39,35 +39,38 @@ export default async function ClassPage({ params }: Props) {
           </h2>
 
           <div className="grid md:grid-cols-2 gap-6">
-            {data.materials.map((item) => (
-              <div
-                key={item.week}
-                className="bg-[#11161d] p-6 rounded-xl hover:translate-y-[-4px] transition shadow-md"
-              >
-                <p className="text-sm text-neutral-500">Minggu {item.week}</p>
+            {data.materials
+              .filter((item) => item.showing)
+              .map((item) => (
+                <div
+                  key={item.week}
+                  className="bg-[#11161d] p-6 rounded-xl hover:translate-y-[-4px] transition shadow-md"
+                >
+                  <p className="text-sm text-neutral-500">Minggu {item.week}</p>
 
-                <h3 className="font-medium mt-2 mb-4">{item.title}</h3>
+                  <h3 className="font-medium mt-2 mb-4">{item.title}</h3>
 
-                {item.file && (
-                  <a
-                    href={item.file}
-                    target="_blank"
-                    className="inline-block px-4 py-2 bg-[var(--accent)] text-black rounded-md text-sm font-medium hover:opacity-90 transition"
-                  >
-                    Download Materi
-                  </a>
-                )}
-                {item.url && (
-                  <a
-                    href={item.url}
-                    target="_blank"
-                    className="inline-block px-4 py-2 bg-[var(--accent)] text-black rounded-md text-sm font-medium hover:opacity-90 transition"
-                  >
-                    Lihat Materi
-                  </a>
-                )}
-              </div>
-            ))}
+                  {item.file && (
+                    <a
+                      href={item.file}
+                      download
+                      className="inline-block px-4 py-2 bg-[var(--accent)] text-black rounded-md text-sm font-medium hover:opacity-90 transition"
+                    >
+                      Download Materi
+                    </a>
+                  )}
+
+                  {item.url && (
+                    <a
+                      href={item.url}
+                      target="_blank"
+                      className="inline-block px-4 py-2 bg-[var(--accent)] text-black rounded-md text-sm font-medium hover:opacity-90 transition"
+                    >
+                      Lihat Materi
+                    </a>
+                  )}
+                </div>
+              ))}
           </div>
         </section>
       </div>
